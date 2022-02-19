@@ -1,0 +1,651 @@
+{
+	"info": {
+		"_postman_id": "7d29abb4-1091-492f-9686-e29a2b6b9f8a",
+		"name": "product api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "root",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "root",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "root",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "root",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User SignIn",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "root",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1205"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4b5-DlpkJXsZ0vqksAoMEBKKUh890N8\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionabs=s%3AsjkJ-lKrja3IGwTw4i_gytpj4hKperDY.pfQ%2BRaQmqxuRQRn42lkweIYKewzZ%2F3bFVDFxmyz2Vjs; Path=/; Expires=Sat, 26 Feb 2022 08:06:09 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 08:06:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstName\": \"root\",\n    \"lastName\": \"root\",\n    \"_id\": \"6210a4f0232425367265585e\",\n    \"username\": \"root\",\n    \"salt\": \"9e8a78cc9dc747e52b396048516e8528e84c52d9e9337d91c912b12959dbb9bd\",\n    \"hash\": \"e0a8e7f5b063a1074497b9f72d0519e4c08553e4c858fc8546457250a5b7045cba0d0a739d822e9845c8686b3ef16965cb741adca21b1bea9327f4ff9b4f4ca8821619f247cc6aab1ed2808963678732219dfd603de95a847891dffda543575f3bd99d7d4758f188a4b9cf8c5ef4110eae515b3e156717ba84a830e64d07fe29203434d774fdbd2c362670a1e5c0eeceaf7426653282ab6d07a24dce307c93ac63dd4be0c9735e8c8120cf23504dcdb82da4cef2699843dd435fc87b530407c15a46d5788eb35a59b725daf8f7f805150229e0bba3543be82c2cacef8fc6417c4f97c976e8de6541cf3af65aefc906a1b940db4e3d2ae902c54f876938cff941f3631be72b8194c141c59b0907f96ff8411e4dac0fa2269be59b1db15cc8e905688e84f91d2e07863f5caf2670fdfda277ac0a62b6542f6e73244c8a39ea04b00e3bf9077fdaaed8544d06687d8cc5ed0900707ca23cf130fbb5fdb5a6cb19c84c2dc8b78dd1e78536c741795b32e57a58fcf4483f0fced10308c2918df385b62a4ba4cb7063b64238d08d96916453ec229aac922049290b463fa85737910f37168b278b116d96b3f9a986d60f5805f42f743ce185b2affd4c89eb3490c2f248fa43554368147915089e29878b050edb22e1f20482860a058a53d0b25d83ba009bddbf6cbba4648b0760c9b0eac8ad3a1c3fadd50c664e9030b8f6af4492589e\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "EASYABC",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "EASYABC",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26-0/sjDqk7nHpWpcyTsbFoCkFA5ao\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionabs=s%3AsjkJ-lKrja3IGwTw4i_gytpj4hKperDY.pfQ%2BRaQmqxuRQRn42lkweIYKewzZ%2F3bFVDFxmyz2Vjs; Path=/; Expires=Sat, 26 Feb 2022 08:04:00 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 08:04:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Username : EASYABC Login Successfully "
+				}
+			]
+		},
+		{
+			"name": "User Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17-msGinOnr/7LAoJOETHN5lgjqLBY\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionabs=s%3AVa9I9TJuhkv7p_pwKQfBMZrDsMGeNRDS.T3FHPYxHJfeG%2B6ekxIuMcqKGqNVy9GvY0YbADKYo6BE; Path=/; Expires=Sat, 26 Feb 2022 07:41:57 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 07:41:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User logout Succesfully"
+				}
+			]
+		},
+		{
+			"name": "User List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "304"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"130-AbAQ19zWDcNvW8EP3lH0qoz6T1g\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 08:06:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"620f4ebf86678f1e6858b4c2\",\n        \"firstName\": \"Manjeet\",\n        \"lastName\": \"Saini\",\n        \"username\": \"Smanjeet\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"620f52bcff455a4cdb11d7e2\",\n        \"firstName\": \"ABC\",\n        \"lastName\": \"XYZ\",\n        \"username\": \"EASYABC\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6210a4f0232425367265585e\",\n        \"firstName\": \"root\",\n        \"lastName\": \"root\",\n        \"username\": \"root\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "User Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/620f52bcff455a4cdb11d7e2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"620f52bcff455a4cdb11d7e2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/620f52bcff455a4cdb11d7e2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"620f52bcff455a4cdb11d7e2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "98"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"62-p1/wFpCEZ3t/f+UL1PXwkB5w/rE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 08:05:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"620f52bcff455a4cdb11d7e2\",\n    \"firstName\": \"ABC\",\n    \"lastName\": \"XYZ\",\n    \"username\": \"EASYABC\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Product Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fisier",
+							"type": "file",
+							"src": "/C:/Users/Manjeet Saini/Documents/jsbasic/node/Products/newupload.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/upload-csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"upload-csv"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product Upload",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fisier",
+									"type": "file",
+									"src": "/C:/Users/Manjeet Saini/Documents/jsbasic/node/Products/newupload.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/upload-csv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"upload-csv"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-nw54ZsjTJy1njK47Iqma13Hf5OQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 08:04:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Record inserted in Database Successfully"
+				}
+			]
+		},
+		{
+			"name": "Product List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/product/views",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"views"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/product/views",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"views"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e1-J7Cujq5r4Zq0e06zCqIzM/ZBqMM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Feb 2022 08:06:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6210a4752324253672655853\",\n        \"name\": \"XYZ Laptop\",\n        \"quantity\": 15,\n        \"price\": 699,\n        \"_createdBy\": \"EASYABC\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6210a4752324253672655855\",\n        \"name\": \"dejj Laptop\",\n        \"quantity\": 2,\n        \"price\": 699,\n        \"_createdBy\": \"EASYABC\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
